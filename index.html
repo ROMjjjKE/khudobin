@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Диагностика и ремонт авто — ИП Худобин А.П., Минск, Кузнечная 2</title>
+<meta name="description" content="Диагностика, ремонт и техническое обслуживание автомобиля в Минске: двигатель, дизель, подвеска, тормоза, КПП, электрика, проверка перед покупкой. Тел. +375 (44) 797-06-38.">
+<meta property="og:title" content="Диагностика и ремонт авто — ИП Худобин А.П., Минск, Кузнечная 2">
+<meta property="og:description" content="Диагностика, ремонт и техническое обслуживание автомобиля в Минске: двигатель, дизель, подвеска, тормоза, КПП, электрика, проверка перед покупкой. Тел. +375 (44) 797-06-38.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#10171B">
+<style>
+:root{--paper:#EDF0EE;--white:#fff;--ink:#10171B;--ink2:#1B242A;--muted:#5B676D;--line:rgba(16,23,27,.14);
+--green:#0B7A4B;--green-d:#096640;--mint:#DCEBE2;--red:#B3311F;--amber:#C9861A;
+--pad:24px;--max:1300px;--disp:'Archivo',system-ui,sans-serif;--body:'Golos Text',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.62 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{margin:0;font-family:var(--disp);font-weight:800;line-height:.98;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}[hidden]{display:none!important}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.header{position:sticky;top:0;z-index:40;background:rgba(237,240,238,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.header__in{display:flex;align-items:center;gap:20px;padding:11px 0}
+.logo{display:flex;align-items:center;gap:9px}
+.logo__mark{width:34px;height:34px;display:grid;place-items:center;background:var(--ink);color:#7BE0B0}
+.logo__mark svg{width:22px;height:22px}
+.logo__txt{display:flex;flex-direction:column;line-height:1.12}
+.logo__txt b{font:800 15px/1 var(--disp);letter-spacing:.06em}
+.logo__txt i{font:400 9.5px/1 var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-style:normal}
+.nav{display:flex;gap:18px;margin-left:auto;font-size:13.5px}
+.nav a{padding:6px 0;border-bottom:2px solid transparent;color:#374246}
+.nav a:hover,.nav a.is-on{border-color:var(--green);color:var(--ink)}
+.header__tel{font:500 13px/1 var(--mono)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 20px;font:600 12.5px/1 var(--body);letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;transition:.18s}
+.btn:hover{background:#000;border-color:#000}
+.btn--green{background:var(--green);border-color:var(--green)}
+.btn--green:hover{background:var(--green-d);border-color:var(--green-d)}
+.btn--line{background:transparent;color:var(--ink)}
+.btn--line:hover{background:var(--ink);color:#fff}
+.burger{display:none;width:42px;height:38px;border:1px solid var(--line);background:#fff;align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer}
+.burger i{display:block;width:17px;height:2px;background:var(--ink)}
+.burger.is-close i:first-child{transform:rotate(45deg) translateY(3px)}
+.burger.is-close i:last-child{transform:rotate(-45deg) translateY(-3px)}
+.hero{position:relative;min-height:min(95svh,820px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#0D1216}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,12,15,.55),rgba(8,12,15,.18) 40%,rgba(8,12,15,.76) 76%,#0C1115 100%)}
+.hero__in{position:relative;z-index:2;width:100%;padding:clamp(34px,6vw,62px) 0 clamp(18px,3vw,26px)}
+.hero h1{font-size:clamp(2.2rem,6.6vw,5rem);letter-spacing:-.03em}
+.hero__lede{max-width:48ch;margin:16px 0 20px;color:rgba(255,255,255,.85);font-size:clamp(.94rem,1.35vw,1.05rem)}
+.hero__acts{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:clamp(18px,3vw,32px)}
+.hero .btn--line{border-color:rgba(255,255,255,.45);color:#fff}
+.hero .btn--line:hover{background:#fff;color:var(--ink)}
+.hero__facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.24)}
+.hero__facts div{padding:13px 14px 0 0}
+.hero__facts b{display:block;font:800 clamp(1rem,1.9vw,1.35rem)/1.1 var(--disp);letter-spacing:-.01em}
+.hero__facts span{font:400 9.5px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.62)}
+.drawer{position:fixed;inset:0;z-index:90;background:rgba(8,12,15,.72);display:none}
+.drawer[data-open]{display:block}
+.drawer__in{position:absolute;inset:0 0 0 auto;width:min(400px,92vw);background:var(--paper);padding:22px;overflow-y:auto}
+.drawer__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.drawer__nav{display:grid;font:800 19px/1 var(--disp);letter-spacing:-.01em}
+.drawer__nav a{padding:14px 0;border-bottom:1px solid var(--line)}
+.drawer__cta{width:100%;justify-content:center;margin-top:18px}
+.drawer__note{font-size:12.5px;color:var(--muted);margin-top:12px}
+body.is-locked{overflow:hidden}
+.mbar{display:none}
+@media (max-width:1024px){
+.nav{display:none}.burger{display:flex}.header__tel{display:none}.header__in{gap:10px}
+.hero__facts{grid-template-columns:1fr 1fr}
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Golos+Text:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.v1.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="header"><div class="header__in wrap">
+<a class="logo" href="index.html"><span class="logo__mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h4l2-6 3 11 2-5h7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg></span><span class="logo__txt"><b>ХУДОБИН</b><i>диагностика · ремонт · ТО</i></span></a>
+<nav class="nav" aria-label="Основное меню"><a href="index.html" class="is-on">Главная</a><a href="diagnostika.html">Диагностика</a><a href="remont-to.html">Ремонт и ТО</a><a href="pered-pokupkoy.html">Перед покупкой</a><a href="kak-prohodit.html">Как проходит</a><a href="kontakty.html">Контакты</a></nav>
+<a class="header__tel" href="tel:+375447970638">+375 (44) 797-06-38</a>
+<a class="btn btn--green" href="https://wa.me/375447970638" target="_blank" rel="noopener">Записаться</a>
+<button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
+</div></header>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+<div class="drawer__in">
+<div class="drawer__top">
+<a class="logo" href="index.html"><span class="logo__mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h4l2-6 3 11 2-5h7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg></span><span class="logo__txt"><b>ХУДОБИН</b><i>диагностика · ремонт</i></span></a>
+<button class="burger is-close" type="button" data-close aria-label="Закрыть меню"><i></i><i></i></button>
+</div>
+<nav class="drawer__nav"><a href="index.html">Главная</a><a href="diagnostika.html">Диагностика</a><a href="remont-to.html">Ремонт и ТО</a><a href="pered-pokupkoy.html">Перед покупкой</a><a href="kak-prohodit.html">Как проходит</a><a href="kontakty.html">Контакты</a></nav>
+<a class="btn btn--green drawer__cta" href="tel:+375447970638">Позвонить +375 (44) 797-06-38</a>
+<p class="drawer__note">Минск, ул. Кузнечная, 2. Запись по телефону и в мессенджерах, время согласуем заранее.</p>
+</div></div>
+<main>
+<section class="hero">
+<img class="hero__img" src="assets/img/hero.jpg" alt="Механик осматривает автомобиль на подъёмнике" width="1600" height="900" fetchpriority="high">
+<div class="hero__in"><div class="wrap">
+<h1>Сначала диагноз.<br>Потом ремонт.</h1>
+<p class="hero__lede">Диагностика, ремонт и техническое обслуживание автомобиля в Минске, Кузнечная 2. Бензин и дизель: двигатель, подвеска, тормоза, КПП, электрика, проверка перед покупкой.</p>
+<div class="hero__acts">
+<a class="btn btn--green" href="tel:+375447970638">Позвонить +375 (44) 797-06-38</a>
+<a class="btn btn--line" href="https://wa.me/375447970638" target="_blank" rel="noopener">Записаться в WhatsApp</a>
+</div>
+<div class="hero__facts">
+<div><b>10 видов</b><span>диагностики</span></div>
+<div><b>бензин и дизель</b><span>включая дизельную аппаратуру</span></div>
+<div><b>перед покупкой</b><span>проверка до сделки</span></div>
+<div><b>Кузнечная 2</b><span>Минск</span></div>
+</div>
+</div></div>
+</section>
+
+<div class="rule" aria-hidden="true"></div>
+
+<section class="section"><div class="wrap">
+<div class="sec-head"><div><p class="tag">протокол 01 / направления</p><h2 class="h2">Десять видов<br>диагностики</h2></div>
+<p>Каждое направление — своя логика проверки. Начинаем с того, что беспокоит вас, и не разбираем машину «на всякий случай».</p></div>
+<div class="dlist">
+<a class="drow" href="diagnostika.html#d1"><span class="drow__n">01</span><b>Диагностика двигателя</b><span>Запуск, холостой ход, тяга, расход, посторонние звуки и ошибки блока управления.</span></a><a class="drow" href="diagnostika.html#d2"><span class="drow__n">02</span><b>Компьютерная диагностика</b><span>Сканируем все доступные блоки: текущие и сохранённые ошибки, параметры в реальном времени, готовность систем.</span></a><a class="drow" href="diagnostika.html#d3"><span class="drow__n">03</span><b>Диагностика дизельного двигателя</b><span>Отдельная логика проверки: давление в топливной рампе, форсунки, наддув, EGR и состояние сажевого фильтра.</span></a><a class="drow" href="diagnostika.html#d4"><span class="drow__n">04</span><b>Диагностика подвески</b><span>Стуки, скрипы, люфты и поведение на неровностях: смотрим на подъёмнике и проверяем на ходу.</span></a><a class="drow" href="diagnostika.html#d5"><span class="drow__n">05</span><b>Диагностика тормозной системы</b><span>Вибрация при торможении, скрип, увеличенный путь: проверяем диски, колодки, суппорты и работу ABS.</span></a><a class="drow" href="diagnostika.html#d6"><span class="drow__n">06</span><b>Диагностика КПП</b><span>Рывки, толчки, задержки при переключении, шум и пробуксовка: механика или автомат, где искать причину.</span></a><a class="drow" href="diagnostika.html#d7"><span class="drow__n">07</span><b>Диагностика электрики</b><span>Всё, что связано с проводкой и потребителями: свет, стеклоподъёмники, панель приборов, утечки тока.</span></a><a class="drow" href="diagnostika.html#d8"><span class="drow__n">08</span><b>Технический осмотр</b><span>Общий осмотр автомобиля по узлам: что в порядке, что требует внимания и в каком порядке это решать.</span></a><a class="drow" href="diagnostika.html#d9"><span class="drow__n">09</span><b>Диагностика перед покупкой</b><span>Проверяем машину до сделки: скрытые ошибки, следы ремонта, состояние агрегатов и что предстоит по деньгам.</span></a><a class="drow" href="diagnostika.html#d10"><span class="drow__n">010</span><b>Диагностика перед поездкой</b><span>Дальняя дорога: проверяем то, что чаще всего подводит в пути, чтобы не искать сервис на трассе.</span></a>
+</div>
+</div></section>
+
+
+<section class="section section--white section--line" id="pick"><div class="wrap">
+<div class="sec-head"><div><p class="tag">протокол 02 / жалоба</p><h2 class="h2">Что беспокоит<br>в машине?</h2></div>
+<p>Выберите жалобу — покажем, какие системы проверяем и почему. Диагноз по описанию не ставим, но направление поиска понятное.</p></div>
+<div class="pick">
+<div class="pick__list" id="plist"><button class="pbtn" type="button" data-k="pull"><span class="sq"></span><span>Не тянет, провалы при разгоне</span></button><button class="pbtn" type="button" data-k="check"><span class="sq"></span><span>Горит «чек» или ошибка на панели</span></button><button class="pbtn" type="button" data-k="knock"><span class="sq"></span><span>Стук или скрип в подвеске</span></button><button class="pbtn" type="button" data-k="brakes"><span class="sq"></span><span>Вибрация или скрип при торможении</span></button><button class="pbtn" type="button" data-k="gear"><span class="sq"></span><span>Толчки, рывки в коробке</span></button><button class="pbtn" type="button" data-k="diesel"><span class="sq"></span><span>Дизель дымит, троит, плохо заводится</span></button><button class="pbtn" type="button" data-k="electro"><span class="sq"></span><span>Глючит электрика: свет, панель, стеклоподъёмники</span></button><button class="pbtn" type="button" data-k="buy"><span class="sq"></span><span>Покупаю машину, нужна проверка</span></button><button class="pbtn" type="button" data-k="trip"><span class="sq"></span><span>Собираюсь в дальнюю поездку</span></button><button class="pbtn" type="button" data-k="unknown"><span class="sq"></span><span>Не понимаю, что с машиной</span></button></div>
+<div class="pick__out">
+<p class="pick__k" id="pK">ПРОВЕРКА</p>
+<h3 id="pT">Не тянет</h3>
+<p id="pText"></p>
+<p class="pick__k" style="margin-top:4px">ЧТО СМОТРИМ</p>
+<div class="chipset" id="pChips"></div>
+<a class="btn btn--green" href="https://wa.me/375447970638" target="_blank" rel="noopener" id="pSend">Записаться на диагностику</a>
+</div>
+</div>
+</div></section>
+
+
+
+<section class="section" id="builder"><div class="wrap">
+<div class="sec-head"><div><p class="tag">протокол 03 / заявка</p><h2 class="h2">Соберите<br>свой осмотр</h2></div>
+<p>Отметьте, что нужно проверить. На выходе — готовый список для сообщения: его можно отправить нам и обсудить время записи.</p></div>
+<div class="builder">
+<div class="clist" id="clist">
+<label class="citem"><input type="checkbox" data-v="Диагностика двигателя"><span>Диагностика двигателя</span></label><label class="citem"><input type="checkbox" data-v="Компьютерная диагностика"><span>Компьютерная диагностика</span></label><label class="citem"><input type="checkbox" data-v="Диагностика дизельного двигателя"><span>Диагностика дизельного двигателя</span></label><label class="citem"><input type="checkbox" data-v="Диагностика подвески"><span>Диагностика подвески</span></label><label class="citem"><input type="checkbox" data-v="Диагностика тормозной системы"><span>Диагностика тормозной системы</span></label><label class="citem"><input type="checkbox" data-v="Диагностика КПП"><span>Диагностика КПП</span></label><label class="citem"><input type="checkbox" data-v="Диагностика электрики"><span>Диагностика электрики</span></label><label class="citem"><input type="checkbox" data-v="Технический осмотр"><span>Технический осмотр</span></label><label class="citem"><input type="checkbox" data-v="Диагностика перед покупкой"><span>Диагностика перед покупкой</span></label><label class="citem"><input type="checkbox" data-v="Диагностика перед поездкой"><span>Диагностика перед поездкой</span></label>
+</div>
+<div class="builder__out">
+<div class="builder__count"><b id="bNum">0</b><span>из 10 отмечено</span></div>
+<ul class="builder__sel" id="bSel"></ul>
+<p class="builder__empty" id="bEmpty">Пока ничего не выбрано. Отметьте пункты слева — они появятся здесь.</p>
+<a class="btn btn--green" href="#" target="_blank" rel="noopener" id="bSend">Отправить список в WhatsApp</a>
+<p class="builder__note">Стоимость и время работ согласуем до начала: сначала диагностика, потом решение по ремонту.</p>
+</div>
+</div>
+</div></section>
+
+
+<section class="section section--ink"><div class="wrap">
+<div class="sec-head"><div><p class="tag">протокол 04 / результат</p><h2 class="h2">Что вы получаете<br>после осмотра</h2></div>
+<p>Не «ошибки есть, надо менять всё», а понятная картина: что в норме, что под вниманием и что критично.</p></div>
+<div class="cards">
+<div class="card"><h3>Расшифровку ошибок</h3><p>Объясняем, что означает код и к чему он относится: датчик, проводка или сам агрегат.</p></div>
+<div class="card"><h3>Живые параметры</h3><p>Смотрим, как система ведёт себя под нагрузкой, а не только в момент ошибки.</p></div>
+<div class="card"><h3>Осмотр на подъёмнике</h3><p>Подвеска, тормоза, приводы, течи: то, что сканер не покажет никогда.</p></div>
+<div class="card"><h3>Список по приоритету</h3><p>Что делать срочно, что можно отложить и на что обратить внимание позже.</p></div>
+<div class="card"><h3>План ремонта</h3><p>Какие работы нужны и в каком порядке, чтобы не возвращаться к тому же узлу дважды.</p></div>
+<div class="card"><h3>Разговор без давления</h3><p>Скажем, если ремонт не нужен прямо сейчас. Решение остаётся за вами.</p></div>
+</div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<div class="sec-head"><div><p class="tag">протокол 05 / порядок</p><h2 class="h2">Как проходит<br>визит</h2></div>
+<p>Сначала слушаем жалобу, потом проверяем. Всё, что нашли, показываем и объясняем до начала работ.</p></div>
+<div class="steps">
+<div class="step"><span class="step__n">01</span><b>Запись</b><p>По телефону или в мессенджере: марка, модель, что беспокоит. Согласуем время.</p></div>
+<div class="step"><span class="step__n">02</span><b>Жалоба</b><p>Рассказываете, как проявляется: когда, на какой скорости, при какой температуре.</p></div>
+<div class="step"><span class="step__n">03</span><b>Проверка</b><p>Сканер, замеры, осмотр на подъёмнике и тест-драйв, если нужен.</p></div>
+<div class="step"><span class="step__n">04</span><b>Результат</b><p>Объясняем причину, показываем узлы, согласуем ремонт и время.</p></div>
+</div>
+<a class="btn btn--line" style="margin-top:20px" href="kak-prohodit.html">Подробнее о порядке работ</a>
+</div></section>
+
+<section class="section section--white section--line"><div class="wrap">
+<div class="sec-head"><div><p class="tag">протокол 06 / перед сделкой</p><h2 class="h2">Проверка<br>перед покупкой</h2></div>
+<p>Машина нравится, но хочется знать правду до передачи денег. Смотрим ошибки, следы ремонта и состояние агрегатов.</p></div>
+<div class="two">
+<div class="prose">
+<p>Проверка перед покупкой — это не «посмотреть под капот». Это сканирование всех блоков, осмотр кузова и следов ремонта, проверка двигателя, коробки и ходовой. По итогу вы понимаете, во что ввязываетесь и какие траты предстоят в первый год.</p>
+<ul>
+<li>текущие и сохранённые ошибки по всем блокам;</li>
+<li>следы ремонта и окраса, состояние кузова;</li>
+<li>работа двигателя, КПП, тормозов и подвески;</li>
+<li>список замечаний с приоритетом: срочно, скоро, когда-нибудь.</li>
+</ul>
+<a class="btn btn--green" href="pered-pokupkoy.html">Что входит в проверку</a>
+</div>
+<div class="gal" style="grid-template-columns:1fr">
+<figure><img src="assets/img/buy.jpg" alt="Осмотр автомобиля перед покупкой" width="1200" height="900" loading="lazy"><figcaption>Осмотр перед сделкой</figcaption></figure>
+<figure><img src="assets/img/tablet.jpg" alt="Диагностический планшет" width="1200" height="900" loading="lazy"><figcaption>Сканер · параметры</figcaption></figure>
+</div>
+</div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<div class="sec-head"><div><p class="tag">протокол 07 / кадры</p><h2 class="h2">Как это выглядит</h2></div>
+<p>Подъёмник, сканер, тормоза под лампой и отчёт, который остаётся у вас.</p></div>
+<div class="gal">
+<figure class="wide"><img src="assets/img/hero.jpg" alt="Осмотр автомобиля на подъёмнике" width="1600" height="700" loading="lazy"><figcaption>Осмотр снизу</figcaption></figure>
+<figure><img src="assets/img/brakes.jpg" alt="Проверка тормозов и подвески" width="1200" height="900" loading="lazy"><figcaption>Тормоза · подвеска</figcaption></figure>
+<figure><img src="assets/img/diesel.jpg" alt="Проверка дизельного двигателя" width="1200" height="900" loading="lazy"><figcaption>Дизель · аппаратура</figcaption></figure>
+<figure><img src="assets/img/report.jpg" alt="Протокол осмотра автомобиля" width="1200" height="900" loading="lazy"><figcaption>Протокол осмотра</figcaption></figure>
+</div>
+</div></section>
+
+<section class="section section--white section--line"><div class="wrap"><div class="two">
+<div><p class="tag">протокол 08 / вопросы</p><h2 class="h2" style="margin-bottom:18px">Отвечаем заранее</h2>
+<div class="faq">
+<details><summary>Сколько стоит диагностика?</summary><p>Стоимость зависит от направления и того, сколько систем нужно проверить. Скажите марку, модель и что беспокоит — назовём цену и время по телефону до записи.</p></details>
+<details><summary>Нужно ли мыть машину перед диагностикой?</summary><p>Специально готовить автомобиль не нужно. Достаточно приехать с тем, что есть, и рассказать, как проявляется неисправность.</p></details>
+<details><summary>Можно приехать со своей записью или идеей, что менять?</summary><p>Можно. Но сначала проверим: часто «виноватый» узел оказывается в порядке, а причина в датчике, проводке или соседней системе.</p></details>
+<details><summary>Делаете ремонт после диагностики?</summary><p>Да, диагностика, ремонт и техническое обслуживание в одном месте. Точный состав работ и стоимость согласуем после осмотра.</p></details>
+<details><summary>Проверяете дизельные двигатели?</summary><p>Да, дизель — отдельное направление: давление в топливной рампе, форсунки, наддув, EGR, сажевый фильтр.</p></details>
+<details><summary>Что будет с ошибками после ремонта?</summary><p>После устранения причины сбрасываем ошибки и проверяем, что они не возвращаются при работе двигателя и в движении.</p></details>
+</div></div>
+<div><div class="card fact" style="margin-bottom:14px"><b>10</b><span>направлений диагностики</span></div>
+<div class="card" style="margin-bottom:14px"><p class="tag">адрес</p><h3 style="font-size:1.1rem;margin-bottom:8px">Минск, ул. Кузнечная, 2</h3>
+<p>Запись по телефону и в мессенджерах: время согласуем заранее.</p>
+<a class="btn btn--green" style="width:100%;justify-content:center;margin-top:14px" href="https://maps.google.com/?q=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+2" target="_blank" rel="noopener">Открыть на карте</a></div>
+<div class="card"><p class="tag">телефон</p>
+<p style="font:500 1.1rem/1.3 var(--mono);margin:0 0 12px"><a href="tel:+375447970638">+375 (44) 797-06-38</a></p>
+<div class="msgr"><a href="https://wa.me/375447970638" target="_blank" rel="noopener" aria-label="WhatsApp" style="color:#25D366;border-color:#CBD5D0"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.3 14.1c-.2.6-1.2 1.2-1.9 1.2-.5 0-1.1 0-2-.4a11 11 0 0 1-4.4-3.9c-.5-.8-.9-1.7-.9-2.5 0-.7.4-1.4.9-1.8.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.4.5c-.1.2-.2.3 0 .5a8 8 0 0 0 3.4 2.9c.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4s0 .5-.1.9"/></svg></a><a href="viber://chat?number=%2B375447970638" aria-label="Viber" style="color:#7360F2;border-color:#CBD5D0"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7 2 3 5.6 3 10c0 2.5 1.3 4.7 3.4 6.1L6 21l4-1.6c.6.1 1.3.2 2 .2 5 0 9-3.6 9-8s-4-8-9-8m3.6 11.3c-.4.9-1.9 1.6-2.7 1.5-2.4-.3-4.6-2.1-5.4-4.4-.3-.8.2-2 1-2.4.3-.2.7 0 .9.3l.7 1.2c.1.3 0 .5-.2.7-.3.2-.2.5.1.9.6.8 1.2 1.2 1.9 1.5.4.2.6 0 .8-.2s.4-.3.7-.2l1.3.6c.3.2.3.6.2.9"/></svg></a><a href="https://t.me/+375447970638" target="_blank" rel="noopener" aria-label="Telegram" style="color:#229ED9;border-color:#CBD5D0"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 4.2 2.9 11.4c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1 .9 1.5.3l2.5-2.6 4.6 3.4c.6.4 1.4 0 1.5-.7l2.5-15c.1-.8-.6-1.4-1.5-1.2M9.4 14.3l8.4-5.6-6.8 6.6-.2 3z"/></svg></a></div></div>
+</div>
+</div></div></section>
+
+<section class="cta"><div class="wrap cta__in">
+<div><h2>Опишите симптом —<br>предложим проверку</h2>
+<p>Позвоните или напишите: марка, модель и что происходит. Скажем, что проверить в первую очередь.</p></div>
+<div class="cta__acts"><a class="btn" href="tel:+375447970638">Позвонить</a><a class="btn btn--ghost" href="https://wa.me/375447970638" target="_blank" rel="noopener">WhatsApp</a></div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap">
+<div class="footer__top">
+<div class="footer__about"><a class="logo logo--f" href="index.html"><span class="logo__mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h4l2-6 3 11 2-5h7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg></span><span class="logo__txt"><b>ХУДОБИН</b><i>диагностика · ремонт · ТО</i></span></a>
+<p>Диагностика, ремонт и техническое обслуживание автомобиля. Минск, ул. Кузнечная, 2.</p></div>
+<div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="diagnostika.html">Диагностика</a></li><li><a href="remont-to.html">Ремонт и ТО</a></li><li><a href="pered-pokupkoy.html">Перед покупкой</a></li><li><a href="kak-prohodit.html">Как проходит</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div>
+<div><h4>Диагностика</h4><ul><li><a href="diagnostika.html#d1">Двигатель</a></li><li><a href="diagnostika.html#d2">Компьютерная</a></li><li><a href="diagnostika.html#d3">Дизель</a></li><li><a href="diagnostika.html#d4">Подвеска</a></li><li><a href="diagnostika.html#d5">Тормоза</a></li><li><a href="pered-pokupkoy.html">Перед покупкой</a></li></ul></div>
+<div><h4>Связь</h4><ul>
+<li><a href="tel:+375447970638">+375 (44) 797-06-38</a></li>
+<li><a href="https://maps.google.com/?q=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+2" target="_blank" rel="noopener">Минск, ул. Кузнечная, 2</a></li>
+<li>Запись по телефону и в мессенджерах</li>
+<li style="margin-top:10px"><div class="msgr"><a href="https://wa.me/375447970638" target="_blank" rel="noopener" aria-label="WhatsApp" style="color:#25D366"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.3 14.1c-.2.6-1.2 1.2-1.9 1.2-.5 0-1.1 0-2-.4a11 11 0 0 1-4.4-3.9c-.5-.8-.9-1.7-.9-2.5 0-.7.4-1.4.9-1.8.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.4.5c-.1.2-.2.3 0 .5a8 8 0 0 0 3.4 2.9c.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4s0 .5-.1.9"/></svg></a><a href="viber://chat?number=%2B375447970638" aria-label="Viber" style="color:#7360F2"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7 2 3 5.6 3 10c0 2.5 1.3 4.7 3.4 6.1L6 21l4-1.6c.6.1 1.3.2 2 .2 5 0 9-3.6 9-8s-4-8-9-8m3.6 11.3c-.4.9-1.9 1.6-2.7 1.5-2.4-.3-4.6-2.1-5.4-4.4-.3-.8.2-2 1-2.4.3-.2.7 0 .9.3l.7 1.2c.1.3 0 .5-.2.7-.3.2-.2.5.1.9.6.8 1.2 1.2 1.9 1.5.4.2.6 0 .8-.2s.4-.3.7-.2l1.3.6c.3.2.3.6.2.9"/></svg></a><a href="https://t.me/+375447970638" target="_blank" rel="noopener" aria-label="Telegram" style="color:#229ED9"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 4.2 2.9 11.4c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1 .9 1.5.3l2.5-2.6 4.6 3.4c.6.4 1.4 0 1.5-.7l2.5-15c.1-.8-.6-1.4-1.5-1.2M9.4 14.3l8.4-5.6-6.8 6.6-.2 3z"/></svg></a></div></li>
+</ul></div>
+</div>
+<div class="footer__bottom"><span>© <span id="yr">2026</span> ИП Худобин Андрей Павлович</span>
+<span><a href="politika.html">Политика обработки персональных данных</a></span></div>
+</div></footer>
+<div class="mbar" role="navigation" aria-label="Быстрая связь">
+<a href="tel:+375447970638"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.56 3.5.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1z"/></svg>Позвонить</a>
+<a href="https://wa.me/375447970638" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.3 14.1c-.2.6-1.2 1.2-1.9 1.2-.5 0-1.1 0-2-.4a11 11 0 0 1-4.4-3.9c-.5-.8-.9-1.7-.9-2.5 0-.7.4-1.4.9-1.8.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.4.5c-.1.2-.2.3 0 .5a8 8 0 0 0 3.4 2.9c.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4s0 .5-.1.9"/></svg>WhatsApp</a>
+<a href="viber://chat?number=%2B375447970638"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7 2 3 5.6 3 10c0 2.5 1.3 4.7 3.4 6.1L6 21l4-1.6c.6.1 1.3.2 2 .2 5 0 9-3.6 9-8s-4-8-9-8m3.6 11.3c-.4.9-1.9 1.6-2.7 1.5-2.4-.3-4.6-2.1-5.4-4.4-.3-.8.2-2 1-2.4.3-.2.7 0 .9.3l.7 1.2c.1.3 0 .5-.2.7-.3.2-.2.5.1.9.6.8 1.2 1.2 1.9 1.5.4.2.6 0 .8-.2s.4-.3.7-.2l1.3.6c.3.2.3.6.2.9"/></svg>Viber</a>
+<a href="https://t.me/+375447970638" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 4.2 2.9 11.4c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1 .9 1.5.3l2.5-2.6 4.6 3.4c.6.4 1.4 0 1.5-.7l2.5-15c.1-.8-.6-1.4-1.5-1.2M9.4 14.3l8.4-5.6-6.8 6.6-.2 3z"/></svg>Telegram</a>
+</div>
+<script src="assets/js/main.v1.js"></script>
+</body>
+</html>
